@@ -2,11 +2,77 @@ body {
     margin: 0px;
 }
 
-#collectionContainer {
+#container {
     display: flex;
-    background-color: aqua;
-    width: 80%;
-    height: 40vh;
-    margin-left: 10%;
-    margin-top: 50px;
+    width: 100%;
+    flex-direction: column;
+}
+
+#collectionPanel {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 50px auto;
+}
+
+.leftPanel {
+    display: flex;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.lowerPanel {
+    display: flex;
+}
+
+.collection {
+    margin: 0 10px;
+}
+
+.collection img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-text {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+
+.photo-text h2 span {
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: 70px;
+    left: -10px;
+    font-weight: 1200;
+}
+
+.photo-text h2 span::after {
+    content: '';
+    width: 30px;
+    height: 1px;
+    margin-left: 16px;
+    position: absolute;
+    bottom: 10px;
+    vertical-align: middle;
+    background-color: red;
+}
+
+.collection:hover {
+    -webkit-filter: grayscale(100);
+    filter: grayscale(100);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
