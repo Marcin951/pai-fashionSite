@@ -76,3 +76,17 @@ body {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
+
+.topProducts h1 {
+    font-size: 42px;
+}
+
+.topProducts {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+}
