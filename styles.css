@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+}
+
+#collectionContainer {
+    display: flex;
+    background-color: aqua;
+    width: 80%;
+    height: 40vh;
+    margin-left: 10%;
+    margin-top: 50px;
+}
