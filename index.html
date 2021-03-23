@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Fashion shop</title>
-    <link rel="stylesheet" href=".git/glide-3.4.1/dist/css/glide.core.css">
+    <link rel="stylesheet" href="glide-3.4.1/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -48,19 +48,359 @@
 
         <div class="topProducts">
             <h1>Top Products</h1>
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">0</li>
-                    <li class="glide__slide">1</li>
-                    <li class="glide__slide">2</li>
-                </ul>
-                <div class="controls" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
-                </div>
-            </div>
-        </div>
+            <div id="slider">
+                <div class="glide">
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0" id="button1">HOT</button>
+                        <button class="glide__bullet" data-glide-dir="=1" id="button2">ON SALE</button>
+                        <button class="glide__bullet" data-glide-dir="=2" id="button3">TRENDING NOW</button>
+                        <button class="glide__bullet" data-glide-dir="=3" id="button4">NEW ARRIVALS</button>
+                    </div>
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="slide">
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-9-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SEASON</p>
+                                        <h3>Men's longsleave</h3>
+                                        <p class="price">$45.00 - $55.00</p>
+                                    </div>
 
-        <script src=".git/glide-3.4.1/dist/glide.min.js"></script>
-        <script src="script.js"></script>
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-8-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">DRESS</p>
+                                        <h3>Sundress newpoint</h3>
+                                        <p class="price">$85.00 - $95.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-7-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">COLLECTION</p>
+                                        <h3>Women's sundress</h3>
+                                        <p class="price">$35.00 - $45.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-6-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SALE</p>
+                                        <h3>Light Turtleneck</h3>
+                                        <p class="price">$65.00 - $75.00</p>
+                                    </div>
+
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="slide">
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-9-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SEASON</p>
+                                        <h3>Men's longsleave</h3>
+                                        <p class="price">$45.00 - $55.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-8-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">DRESS</p>
+                                        <h3>Sundress newpoint</h3>
+                                        <p class="price">$85.00 - $95.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-7-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">COLLECTION</p>
+                                        <h3>Women's sundress</h3>
+                                        <p class="price">$35.00 - $45.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-6-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SALE</p>
+                                        <h3>Light Turtleneck</h3>
+                                        <p class="price">$65.00 - $75.00</p>
+                                    </div>
+
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="slide">
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-9-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SEASON</p>
+                                        <h3>Men's longsleave</h3>
+                                        <p class="price">$45.00 - $55.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-8-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">DRESS</p>
+                                        <h3>Sundress newpoint</h3>
+                                        <p class="price">$85.00 - $95.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-7-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">COLLECTION</p>
+                                        <h3>Women's sundress</h3>
+                                        <p class="price">$35.00 - $45.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-6-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SALE</p>
+                                        <h3>Light Turtleneck</h3>
+                                        <p class="price">$65.00 - $75.00</p>
+                                    </div>
+
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="slide">
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-9-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SEASON</p>
+                                        <h3>Men's longsleave</h3>
+                                        <p class="price">$45.00 - $55.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-8-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">DRESS</p>
+                                        <h3>Sundress newpoint</h3>
+                                        <p class="price">$85.00 - $95.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-7-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">COLLECTION</p>
+                                        <h3>Women's sundress</h3>
+                                        <p class="price">$35.00 - $45.00</p>
+                                    </div>
+
+                                    <div class="cell">
+                                        <div class="productImage">
+                                            <div class="onHoverImage"></div>
+                                            <div class="hoverElement">
+                                                <div class="insideHoverElement">
+                                                    <img src="images/shopping-cart.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                                <div class="insideHoverElement">
+                                                    <img src="images/link.png">
+                                                    <div class="iconBG"></div>
+                                                </div>
+                                            </div>
+                                            <img src="http://coleo.themerex.net/wp-content/uploads/2017/12/product-6-copyright-238x287.jpg">
+                                        </div>
+                                        <p class="subText">SALE</p>
+                                        <h3>Light Turtleneck</h3>
+                                        <p class="price">$65.00 - $75.00</p>
+                                    </div>
+
+                            </li>
+                        </ul>
+                        </div>
+
+                        </div>
+
+                        </div>
+                        </div>
+
+                        <script src="glide-3.4.1/dist/glide.min.js"></script>
+                        <script src="script.js"></script>
 </body>
